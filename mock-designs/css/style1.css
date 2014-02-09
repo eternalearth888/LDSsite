@@ -13,13 +13,10 @@ body {
 
 header {
 	width: 100%;
-	padding: .5em;
 	text-shadow: 2px 2px 5px #737F7C;
-	margin-bottom: .2em;
 	display: table;
+	padding: .5em;
 	background-color: #50A5FE;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
 }
 
 #mainheader{
@@ -49,13 +46,18 @@ header {
 }
 
 nav {
-	list-style-type: none;
+	background-color: #B0CFF3;
+	width: 100%;
+	padding-right: .5em;
+	padding-left: .5em;
+	padding-top: .5em;
 }
 
 ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	background-color: #B0CFF3;
 }
 
 li {
@@ -73,8 +75,7 @@ li {
 
 .content {
 	margin: auto;
-	padding: .5em;
-	width: 800px;
+	width: 750px;
 }
 
 p {
@@ -102,10 +103,10 @@ footer {
 
 section {
 	clear: both;
-	padding: .5em;
 	border: 1px solid;
 	background-color: #FBFBF8;
 	width: 100%;
+	padding: .5em;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
