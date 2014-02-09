@@ -4,33 +4,68 @@ html {
 }
 
 body {  
-	background-color: #3C4238;
+	background-color: #9FCFE3;
 	color: #3C4238;
 	font: Georgia, sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
-.content {
-	background-color: #F1FCFB;
-	margin: auto;
-	width: 80%;
-}
-
 header {
 	text-shadow: 2px 2px 5px #737F7C;
-	text-align: left;
-	padding: .2em;
+	margin-bottom: .2em;
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+}
+
+#mainheader{
+	display: table-row;
 	font-size: 50px;
-	padding-top: 20px;
+	text-align: center;
+}
+
+#subheader{
+	disply: table-row;
+}
+
+.elias {
+	display:table-cell;
+}
+
+.transform {
+	display: table-cell;
+	vertical-align: top;
+	font-size: 25px;
+}
+
+.elias img{
+	width: 150px;
+	height: 200px;
+	border-radius: 5px;
 }
 
 nav {
 	background-color: #737F7C;
 	padding: .5em;
+	margin-top: .5em;
 	margin-bottom: .5em;
 	text-align:center;
 }
+
+.content {
+	background-color: #FFFFFF;
+	margin: auto;
+	width: 80%;
+	max-width: 600px;
+	height: 100%;
+	border-style:none double none;
+}
+
+p {
+	text-align: justify;
+}
+
 
 h1 {
 	text-align:left;
@@ -40,13 +75,14 @@ h1 {
 
 h2 {
 	text-align: left;
-	color: #9FCFE3;
+	color: #175065;
 	font-size: 12px;
+	text-indent: 5em;
 }
 
 footer {
 	margin-bottom: .2em;
-	margin-top: .2em;
+	margin-top: 5em;
 	padding: .5em;
 	text-align: center;
 }
@@ -63,7 +99,7 @@ a:link, a:visited {
 
 a:focus, a:hover, a:active {
 		text-decoration: none;
-		color: #F1FCFB;
+		color: #175065;
 		background-color: #9FCFE3;
 }
 
