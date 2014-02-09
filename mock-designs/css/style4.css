@@ -4,96 +4,102 @@ html {
 }
 
 body {  
-	background-color: #D2D780;
-	color: #3E0053;
-	font: Georgia, sans-serif;
+	color: #000;
+	font-family: "TundraWebPro", Georgia, Times, serif;
+	font-size: 1.25em;
+	font-weight: 400;
+	color: #1a1a1a;
+	background-color: #1a1a1a;
+	-webkit-font-smoothing: antialiased;
 	margin: 0;
 	padding: 0;
+}
+
+#mainheader {
+	display:table;
+	padding: .5em;
+}
+
+.elias {
+	display: table-cell;
+}
+
+.elias img {
+	border-radius: 5px;
+	width: 150px;
+	height: 200px;
 }
 
 header {
-	text-shadow: 2px 2px 5px #44005C;
-	padding: .5em;
-	background-color: #B277CB;
-	font-size: 50px;
-	border-style: none none double none;
+	display: table-cell;
+	color: #C02;
+	font-size: 1.5em;
+	vertical-align: top;
 }
 
 #subheader {
-	font-size: 25px;
+	color: #1a1a1a;
+	font-size: .7em;
 }
 
 nav {
-	margin: auto;
+	font-size: .745em;
 	padding: .2em;
 }
 
-#menu {
-	padding: 0;
-	margin: 0;
-}
-
-#menu li {
+nav li{
 	list-style-type: none;
 	display: inline;
-	margin:0;
-	padding: 0;
 }
 
 .content {
+	width: 80%;
+	min-width: 600px;
+	max-width: 800px;
+	background-color: #fafafa; 
 	margin: auto;
-	min-width: 800px;
 }
 
 p {
 	text-align: justify;
+	text-indent: 2em;
 }
-
 
 h1 {
 	text-align:left;
-	color: #680033;
-	font-size: 16px;
+	color: #C02;
+	text-transform: uppercase;
+	font-size: .7em;
 }
 
 h2 {
-	text-align: left;
-	color: #6B0738;
-	font-size: 12px;
-	text-indent: 5em;
+	font-size: .6em;
+	text-indent: 3em;
 }
 
 footer {
-	background-color: #white;
-	color: #3E0053;
+	padding-top: 2.725em;
 	margin: auto;
 	text-align: center;
+	border-top: 1px solid #1a1a1a;
 }
 
 section {
-	background-color: white;
+	padding: .5em;
 }
 
 li a {
-	display: inline-block;
-	width: 18%;
-	text-align: center;
-	height: 25px;
-	line-height: 25px;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 12px;
+	display: inline-block;
+	text-align: center;
 }
 
 a:link, a:visited {
-	color: #1C0156;
-	background-color: #9178C9;
-	border: 1px solid #1F015F;
+	color: #777;
 }
 
 a:focus, a:hover, a:active {
-	background-color: #1C0156;
-	color: #9178C9;
-	border: 1px solid #1F015F;
+	color: #000;
 }
 
