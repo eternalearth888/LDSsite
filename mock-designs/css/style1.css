@@ -4,7 +4,7 @@ html {
 }
 
 body {  
-	background-color: #9FCFE3;
+	background-color: #CCDDEA;
 	color: #3C4238;
 	font: Georgia, sans-serif;
 	margin: 0;
@@ -12,11 +12,14 @@ body {
 }
 
 header {
+	width: 100%;
+	padding: .5em;
 	text-shadow: 2px 2px 5px #737F7C;
 	margin-bottom: .2em;
-	margin-left: auto;
-	margin-right: auto;
 	display: table;
+	background-color: #50A5FE;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 #mainheader{
@@ -46,20 +49,32 @@ header {
 }
 
 nav {
-	background-color: #737F7C;
-	padding: .5em;
-	margin-top: .5em;
-	margin-bottom: .5em;
-	text-align:center;
+	list-style-type: none;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline;
+	margin: 0 .5em 0 0;
+	background-color: white;
+	border: solid;
+	border-width: 1px 1px 0 1px;
+}
+
+#selected {
+	padding-bottom: 2px;
+	background-color: white;
 }
 
 .content {
-	background-color: #FFFFFF;
 	margin: auto;
-	width: 80%;
-	max-width: 600px;
-	height: 100%;
-	border-style:none double none;
+	padding: .5em;
+	width: 800px;
 }
 
 p {
@@ -81,25 +96,31 @@ h2 {
 }
 
 footer {
-	margin-bottom: .2em;
-	margin-top: 5em;
-	padding: .5em;
+	margin: auto;
 	text-align: center;
 }
 
 section {
-	padding: .2em;
+	clear: both;
+	padding: .5em;
+	border: 1px solid;
+	background-color: #FBFBF8;
+	width: 100%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+li a {
+	padding: 0 1em;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 a:link, a:visited {
-		font-weight: bold;
-		text-decoration: none;
-		color: #F1FCFB;
+		color: #175065;
 }
 
 a:focus, a:hover, a:active {
-		text-decoration: none;
-		color: #175065;
-		background-color: #9FCFE3;
+		color: #50A5FE;
 }
 

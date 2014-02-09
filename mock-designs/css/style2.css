@@ -92,6 +92,10 @@ footer {
 	margin: auto;
 }
 
+a {
+	border-bottom: 1px dotted #573712;
+}
+
 a:link, a:visited {
 		font-weight: bold;
 		text-decoration: none;
