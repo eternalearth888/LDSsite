@@ -13,7 +13,8 @@ body {
 
 .content {
 	margin: auto;
-	width: 80%;
+	width: 400px;
+	height: 100%;
 	box-shadow: 2px 2px 3em #31384D;
 }
 
@@ -56,7 +57,7 @@ h1 {
 }
 
 footer {
-	padding: .2em;
+	padding-top: 50%;
 	text-align: center;
 	background: #F4CBEC;
 }
