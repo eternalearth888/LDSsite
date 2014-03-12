@@ -3,7 +3,7 @@ body,nav, .block {
 	min-width: 900px;
 }
 
-.wrapper, .contact, #contactTable {
+.wrapper, .contact, #contactFooter{
 	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
@@ -289,15 +289,15 @@ footer {
 	display: block;
 }
 
-#contactTable {
+#contactFooter {
 	border-collapse: collapse;
 }
-#contactTable td{
+#contactFooter td{
 	padding: .5em;
 	text-align: center;
 }
 
-#title, #contactHead {
+#title, #contactFooterHead {
 	vertical-align: middle;
 	text-transform: uppercase;
 }
@@ -368,4 +368,54 @@ a:hover, a:focus {
 
 iframe {
 	vertical-align: middle;
+}
+
+/**SUBMISSION FORM**/
+#contactForm,#contactSubmission {
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+
+#contactSubmission {
+	width: 70%;
+}
+
+#contactSubmission tr:nth-child(even), #contactForm tr:nth-child(even) {
+	background-color: rgba(129,204,216,.4);
+}
+
+#contactHead, #companyHead, #extraHead, #submissionHead {
+	background-color: rgba(24,103,118,.6);
+	font-color: #FFF;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	box-shadow: 5px 5px 5px #888888;
+	vertical-align: middle;
+}
+
+#left, #required{
+	vertical-align: middle;
+	text-align: right;
+	font-style: italic;
+	padding-right: 1em;
+}
+
+#contactSubmit {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#contactForm td:nth-child(even){
+	vertical-align: middle;
+	text-align: left;
+	width: auto;
+}
+
+#contactForm textarea {
+	resize: none;
+	white-space: pre-wrap;
+	vertical-align: middle;
+	margin: auto;
 }

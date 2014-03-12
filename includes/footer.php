@@ -1,7 +1,7 @@
 <footer>
 	<div class="contact">
-		<table id="contactTable">
-			<thead id="contactHead">
+		<table id="contactFooter">
+			<thead id="contactFooterHead">
 				<tr>
 					<td colspan="3">
 						Contact Dr. Elia Gourgouris
