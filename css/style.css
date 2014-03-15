@@ -377,10 +377,6 @@ iframe {
 	border-collapse: collapse;
 }
 
-#contactSubmission {
-	width: 70%;
-}
-
 #contactSubmission tr:nth-child(even), #contactForm tr:nth-child(even) {
 	background-color: rgba(129,204,216,.4);
 }
@@ -403,19 +399,12 @@ iframe {
 }
 
 #contactSubmit {
-	text-align: center;
+	text-align: right;
 	vertical-align: middle;
-}
-
-#contactForm td:nth-child(even){
-	vertical-align: middle;
-	text-align: left;
-	width: auto;
 }
 
 #contactForm textarea {
 	resize: none;
 	white-space: pre-wrap;
 	vertical-align: middle;
-	margin: auto;
 }

@@ -1,6 +1,8 @@
 <h2>Thank you for your submission!</h2>
 <?php
 	//create variable names
+	$dateStamp = date('H:i, jS F Y');
+	$seperator = "-------------------------------";
 	$fname = $_POST['firstName'];
 	$lname = $_POST['lastName'] ;
 	$title = $_POST['titleName'];
@@ -17,13 +19,8 @@
 ?>
 
 <table id="contactSubmission">
-	<thead id="submissionHead">
 		<tr>
-			<td colspan="2">Processed At</td>
-		</tr>
-	</thead>
-		<tr>
-			<td><?php echo date('H:i, js F Y'); ?></td>
+			<td colspan="2"><?php echo $dateStamp ?></td>
 		</tr>
 	<thead id="submissionHead">
 		<tr>
@@ -64,8 +61,13 @@
 		<td><?php 
 				echo $address1.'<br />';
 				echo $address2.'<br />';
-				echo $city.','.$state.'<br />';
-				echo $code.'<br />';
+				echo $city;
+				if ($state == "") {
+					echo "";
+				} else {
+					echo ','.$state;
+				}
+				echo '<br />'.$code.'<br />';
 				echo $country.'<br />';
 		 	?>
 		</td>
@@ -113,3 +115,26 @@
 </table>
 
 
+<!-- WRITING TO FILE -->
+<?php
+	$outputString = $seperator."\n".$date."\n".$seperator."\n";
+	/**open file for appending**/
+	@ $fp = fopen("database/submissions.txt",'ab');
+
+	if (!$fp) {
+		echo "<h3>Your submission could not be processed at this time.Please try again later.</h3>";
+		exit;
+	}
+	if ($finalTotal != 0) {
+		flock($fp, LOCK_EX);
+					
+		/**WRITE TO FILE**/
+		fwrite($fp, $outputString, strlen($outputString));
+
+		/**CLOSE FILE**/
+		flock($fp, LOCK_UN);
+		fclose($fp);
+
+		echo "<h3>Submission Processed</h3>";
+	}
+?>

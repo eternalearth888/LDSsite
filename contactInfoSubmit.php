@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-	<?php require('includes/htmlmeta.php'); ?>
+	<?php require('includes/head_meta.php'); ?>
 
 	<body>
 		<?php require('includes/header.php'); ?>
 		<div class="wrapper">
-			<?php include('includes/LDSBlock.php'); ?>
+			<?php require('includes/LDSBlock.php'); ?>
 			<div id="change">
 				<?php include('content/processed.php') ?>
 			</div>
