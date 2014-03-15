@@ -374,6 +374,7 @@ iframe {
 #contactForm,#contactSubmission {
 	margin-left: auto;
 	margin-right: auto;
+	width: 800px;
 	border-collapse: collapse;
 }
 
@@ -395,6 +396,7 @@ iframe {
 	vertical-align: middle;
 	text-align: right;
 	font-style: italic;
+	font-weight: bold;
 	padding-right: 1em;
 }
 
@@ -406,5 +408,13 @@ iframe {
 #contactForm textarea {
 	resize: none;
 	white-space: pre-wrap;
+	width: 800px;
 	vertical-align: middle;
+}
+
+/**ERROR**/
+.error {
+	text-transform: uppercase;
+	font-style: italic;
+	color: red;
 }

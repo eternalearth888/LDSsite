@@ -13,7 +13,7 @@
    		</li>
    		<li><a href="testimonials.php">Testimonials</a></li>
 		<li><a href="media.php">Media</a></li>
-		<li><a href="contactus.php">Contact</a></li>
+		<li><a href="contact.php">Contact</a></li>
 		<li><a href="happinesscenter.php">Happiness Center</a></li>
 	</ul>
 </nav>
