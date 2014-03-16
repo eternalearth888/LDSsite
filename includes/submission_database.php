@@ -25,8 +25,8 @@ $query = "INSERT INTO submissions VALUES
 		'".$pos."',
 		'".$company."',
 		'".$orgSize."',
-		'".$fName."',
-		'".$lName."',
+		'".$fname."',
+		'".$lname."',
 		'".$title."',
 		'".$dateStamp."'
 	)"
