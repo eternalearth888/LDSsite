@@ -1,60 +1,5 @@
 <?php include('includes/error_form.php'); ?>
-<?php
-	//create variable names
-	$dateStamp = date('H:i, jS F Y');
-	$seperator = "-------------------------------";
-	$fname = $_POST['firstName'];
-	$lname = $_POST['lastName'] ;
-	$title = $_POST['titleName'];
-	$company = $_POST['comName'];
-	$orgSize = $_POST['orgSize'];
-	$phone = $_POST['comTel'];
-	$email =$_POST['comEmail'];
-	$site = $_POST['comSite'];
-	$address1 = $_POST['comAdd1'];
-	$address2 = $_POST['comAdd2'];
-	$city = $_POST['comCity'];
-	$state= $_POST['states'];
-	$country = $_POST['countries'];
-	$code = $_POST['comZip'];
-?>
-<?php
-	if((!empty($nameErr)) || (!empty($nameErr2)) || (!empty($emailErr)) || (!empty($phoneErr)) || (!empty($websiteErr)) || (!empty($titleErr)))
-    {
-?>
-	<form action="contact.php" method="POST" name="errorForm">
-	<?php
-		foreach ($_POST as $a => $b) {
-			echo "<input type='hidden' name='".htmlentities($a)."' value='".htmlentities($b)."'>";
-		}
-		if(!empty($nameErr)) {
-  			echo "<input type='hidden' name='nameErr' value='".htmlentities($nameErr)."'>";
-  		}
-  		if (!empty($nameErr2)) {
-  			echo "<input type='hidden' name='nameErr2' value='".htmlentities($nameErr2)."'>";
-  		}
-  		if (!empty($emailErr)) {
-  			echo "<input type='hidden' name='emailErr' value='".htmlentities($emailErr)."'>";
-  		}
-  		if (!empty($phoneErr)) {
-  			echo "<input type='hidden' name='phoneErr' value='".htmlentities($phoneErr)."'>";
-  		}
-  		if (!empty($websiteErr)) {
-  			echo "<input type='hidden' name='websiteErr' value='".htmlentities($websiteErr)."'>";
-  		}
-  		if (!empty($titleErr)) {
-  			echo "<input type='hidden' name='titleErr' value='".htmlentities($titleErr)."'>";
-  		}
-	?>
-	</form>
-	<script language="JavaScript">
-		document.errorForm.submit();
-	</script>
-<?php
-	} else {
-		echo '<h2>'."Thank you for your submission!".'</h2>';
-	}
-?>
+<?php include('includes/submission_scripts.php'); ?>
 
 <table id="contactSubmission">
 		<tr>
@@ -120,15 +65,21 @@
 		<td id="left">Seeking</td>
 		<td>
 			<?php
+				$exec = 0;
+				$team = 0;
+				$info = 0;
 				if (isset($_POST['EC'])) {
+					$exec = 1;
 					echo "Executive Coaching";
 					echo '<br />';
 				}
 				if (isset($_POST['TD'])) {
+					$team = 1;
 					echo "Team Development";
 					echo '<br />';
 				}
 				if (isset($_POST['info'])) {
+					$info = 1;
 					echo "Other";
 					echo '<br />';
 				}
@@ -142,15 +93,21 @@
 		<td id="left">Position(s)</td>
 		<td>
 			<?php
+				$suite = 0;
+				$rep = 0;
+				$pos = 0;
 				if (isset($_POST['CS'])) {
+					$suite = 1;
 					echo "C-Suite Executive";
 					echo '<br />';
 				}
 				if (isset($_POST['HR'])) {
+					$rep = 1;
 					echo "HR Representative";
 					echo '<br />';
 				}
 				if (isset($_POST['position'])) {
+					$pos = 1;
 					echo "Other";
 					echo '<br />';
 				}
@@ -166,6 +123,8 @@
 		</tr>
 	</thead>
 	<tr>
-		<td colspan="2"><?php echo nl2br($_POST['text']); ?></td>
+		<td colspan="2"><?php echo nl2br($details); ?></td>
 	</tr>
 </table>
+
+<?php include('includes/submission_database.php'); ?>
