@@ -1,5 +1,6 @@
 <!-- VARIABLE NAMES -->
 <?php
+	date_default_timezone_set('America/Denver');
 	$dateStamp = date('H:i, jS F Y');
 	$seperator = "-------------------------------";
 	$fname = $_POST['firstName'];

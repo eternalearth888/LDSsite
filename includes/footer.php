@@ -37,6 +37,6 @@
 		</table>
 	</div>
 	<div class="copyrightFooter">
-		&copy; <?= date('Y') ?> LDS Executive Coaching
+		&copy; <?php echo date("Y") ?> LDS Executive Coaching
 	</div>
 </footer>

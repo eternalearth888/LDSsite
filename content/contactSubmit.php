@@ -1,9 +1,11 @@
-<?php include('includes/error_form.php'); ?>
 <?php include('includes/submission_scripts.php'); ?>
+<?php include('includes/error_form.php'); ?>
 
 <table id="contactSubmission">
 		<tr>
-			<td colspan="2" align="center"><?php echo $dateStamp ?></td>
+			<td colspan="2" align="center">
+				<?php echo $dateStamp ?> MT
+			</td>
 		</tr>
 		<tr>
 			<td colspan="2"></td>
@@ -65,23 +67,26 @@
 		<td id="left">Seeking</td>
 		<td>
 			<?php
-				$exec = 0;
-				$team = 0;
-				$info = 0;
 				if (isset($_POST['EC'])) {
-					$exec = 1;
+					$coachV = 1;
 					echo "Executive Coaching";
 					echo '<br />';
+				} else {
+					$coachV = 0;
 				}
 				if (isset($_POST['TD'])) {
-					$team = 1;
+					$teamV = 1;
 					echo "Team Development";
 					echo '<br />';
+				} else {
+					$teamV = 0;
 				}
 				if (isset($_POST['info'])) {
-					$info = 1;
+					$infoV = 1;
 					echo "Other";
 					echo '<br />';
+				} else {
+					$infoV = 0;
 				}
 				if ( (!(isset($_POST['EC']))) && (!(isset($_POST['TD']))) && (!(isset($_POST['info']))) ){
 					echo "N/A";
@@ -93,23 +98,26 @@
 		<td id="left">Position(s)</td>
 		<td>
 			<?php
-				$suite = 0;
-				$rep = 0;
-				$pos = 0;
 				if (isset($_POST['CS'])) {
-					$suite = 1;
+					$suiteV = 1;
 					echo "C-Suite Executive";
 					echo '<br />';
+				} else {
+					$suiteV = 0;
 				}
 				if (isset($_POST['HR'])) {
-					$rep = 1;
+					$repV = 1;
 					echo "HR Representative";
 					echo '<br />';
+				} else {
+					$repV = 0;
 				}
 				if (isset($_POST['position'])) {
-					$pos = 1;
+					$posV = 1;
 					echo "Other";
 					echo '<br />';
+				} else {
+					$posV = 0;
 				}
 				if ( (!(isset($_POST['CS']))) && (!(isset($_POST['HR']))) && (!(isset($_POST['position']))) ){
 					echo "N/A";
@@ -125,6 +133,10 @@
 	<tr>
 		<td colspan="2"><?php echo nl2br($details); ?></td>
 	</tr>
+	<tr>
+		<td colspan="2">
+			<?php include('includes/submission_database.php'); ?>
+		</td>
+	</tr>
 </table>
 
-<?php include('includes/submission_database.php'); ?>
