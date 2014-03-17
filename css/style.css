@@ -371,7 +371,7 @@ iframe {
 }
 
 /**SUBMISSION FORM**/
-#contactForm,#contactSubmission {
+#contactForm,#contactSubmission,#displayTable {
 	margin-left: auto;
 	margin-right: auto;
 	width: 800px;
@@ -382,7 +382,7 @@ iframe {
 	background-color: rgba(129,204,216,.4);
 }
 
-#contactHead, #companyHead, #extraHead, #submissionHead {
+#contactHead, #companyHead, #extraHead, #submissionHead, #displayHead {
 	background-color: rgba(24,103,118,.6);
 	font-color: #FFF;
 	text-align: center;

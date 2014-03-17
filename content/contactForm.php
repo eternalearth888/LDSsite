@@ -5,7 +5,7 @@
 	<table id="contactForm">
 		<thead id="contactHead">
 			<tr>
-				<td colspan="3">
+				<td colspan="2">
 					Tell us about yourself!
 				</td>
 			</tr>
@@ -19,19 +19,13 @@
 					<input type="radio" name="titleName" <?php if (isset($_POST['titleName']) && $_POST['titleName']=="Mrs.") echo "checked";?>  value="Mrs.">Mrs.
 					<input type="radio" name="titleName" <?php if (isset($_POST['titleName']) && $_POST['titleName']=="Mr.") echo "checked";?>  value="Mr.">Mr.
 				</td>
-				<td>
-					<span class="error">* <?php echo $_POST['titleErr'];?></span>
-				</td>
 			</tr>
 			<tr>
 				<td id="left">
 					First Name
 				</td>
 				<td>
-					<input type="text" name="firstName" value="<?php echo $_POST['firstName']; ?>"/>
-				</td>
-				<td>
-					<span class="error">* <?php echo $_POST['nameErr'];?></span>
+					<input type="text" name="firstName"/>
 				</td>
 			</tr>
 			<tr>
@@ -39,15 +33,12 @@
 					Last Name
 				</td>
 				<td>
-					<input type="text" name="lastName" value="<?php echo $_POST['lastName']; ?>" />
-				</td>
-				<td>
-					<span class="error">* <?php echo $_POST['nameErr2'];?></span>
+					<input type="text" name="lastName"/>
 				</td>
 			</tr>
 		<thead id="companyHead">
 			<tr>
-				<td colspan="3">
+				<td colspan="2">
 					Company Information
 				</td>
 			</tr>
@@ -57,7 +48,7 @@
 					Company
 				</td>
 				<td colspan="2">
-					<input type="text" name="comName"  value="<?php echo $_POST['comName']; ?>"/>
+					<input type="text" name="comName"/>
 				</td>
 			</tr>
 			<tr>
@@ -81,10 +72,7 @@
 					Phone
 				</td>
 				<td>
-					<input type="tel" name="comTel" value="<?php echo $_POST['comTel']; ?>" />
-				</td>
-				<td>
-					<span class="error">* <?php echo $_POST['phoneErr'];?></span>
+					<input type="tel" name="comTel"/>
 				</td>
 			</tr>
 			<tr>
@@ -92,10 +80,7 @@
 					Email
 				</td>
 				<td>
-					<input type="email" name="comEmail"  value="<?php echo $_POST['comEmail']; ?>"/>
-				</td>
-				<td>
-					<span class="error">* <?php echo $_POST['emailErr'];?></span>
+					<input type="email" name="comEmail"/>
 				</td>
 			</tr>
 			<tr>
@@ -103,17 +88,14 @@
 					Site
 				</td>
 				<td colspan="2">
-					<input type="text" name="comSite"  value="<?php echo $_POST['comSite']; ?>"/>
-				</td>
-				<td>
-					<span class="error"><?php echo $_POST['websiteErr'];?></span>
+					<input type="text" name="comSite"/>
 				</td>
 			<tr>
 				<td id="left">
 					Address 1
 				</td>
 				<td colspan="2">
-					<input type="text" name="comAdd1"  value="<?php echo $_POST['comAdd1']; ?>"/>
+					<input type="text" name="comAdd1"/>
 				</td>
 			</tr>
 			<tr>
@@ -121,7 +103,7 @@
 					Address 2
 				</td>
 				<td colspan="2">
-					<input type="text" name="comAdd2" value="<?php echo $_POST['comAdd2']; ?>"/>
+					<input type="text" name="comAdd2"/>
 				</td>
 			</tr>
 			<tr>
@@ -129,7 +111,7 @@
 					City
 				</td>
 				<td colspan="2">
-					<input type="text" name="comCity" value="<?php echo $_POST['comCity']; ?>"/>
+					<input type="text" name="comCity"/>
 				</td>
 			</tr>
 			<tr>
@@ -150,7 +132,7 @@
 					Zip/Postal Code
 				</td>
 				<td colspan="2">
-					<input type="number" name="comZip" value="<?php echo $_POST['comZip']; ?>" />
+					<input type="number" name="comZip"/>
 				</td>
 			</tr>
 			<tr>
@@ -183,7 +165,7 @@
 					Position
 				</td>
 				<td colspan="2">
-					<input name="CE" type="checkbox" value="C-Suite Executive">C-Suite Executive
+					<input name="CS" type="checkbox" value="C-Suite Executive">C-Suite Executive
 					<br />
 					<input name="HR" type="checkbox" value="HR Representative">HR Representative
 					<br />
@@ -192,24 +174,19 @@
 			</tr>
 		<thead id="extraHead">
 			<tr>
-				<td colspan="3">
+				<td colspan="2">
 					Please tell state your interests or needs
 				</td>
 			</tr>
 		</thead>
 			<tr>
-				<td colspan="3">
-					<textarea name="text" rows="5" cols="50"  value="<?php echo $POST['text']; ?>"></textarea>
+				<td colspan="2">
+					<textarea name="text" rows="5" cols="50"></textarea>
 				</td>
 			</tr>
 			<tr>
-				<td id="contactSubmit" colspan="3">
+				<td id="contactSubmit" colspan="2">
 					<input type="submit" value="Submit Form"/>
-				</td>
-			</tr>
-			<tr>
-				<td id="required" colspan="3">
-					<span class="error">*Required Field</span>
 				</td>
 			</tr>
 	</table>

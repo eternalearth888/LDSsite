@@ -1,20 +1,16 @@
-<?php include('includes/submission_scripts.php'); ?>
-<?php include('includes/error_form.php'); ?>
+<?php include('content/submission_variables.php'); ?>
 
 <table id="contactSubmission">
-		<tr>
-			<td colspan="2" align="center">
-				<?php echo $dateStamp ?> MT
-			</td>
-		</tr>
-		<tr>
-			<td colspan="2"></td>
-		</tr>
 	<thead id="submissionHead">
 		<tr>
 			<td colspan="2">Basic Info</td>
 		</tr>
 	</thead>
+	<tr>
+		<td colspan="2" align="center">
+			<?php echo $dateStamp ?>
+		</td>
+	</tr>
 	<tr>
 		<td id="left">Title</td>
 		<td><?php echo $title ?></td>
@@ -133,10 +129,7 @@
 	<tr>
 		<td colspan="2"><?php echo nl2br($details); ?></td>
 	</tr>
-	<tr>
-		<td colspan="2">
-			<?php include('includes/submission_database.php'); ?>
-		</td>
-	</tr>
 </table>
-
+<center>
+	<?php include('sql/db_insert.php'); ?>
+</center>
