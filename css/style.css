@@ -84,6 +84,11 @@ header {
 	font-style: italic;
 }
 
+#teamImage {
+	border-radius: .5em;
+	margin-right: 1em;
+}
+
 /**NAVIGATION**/
 nav {
 	vertical-align: middle;
@@ -374,7 +379,7 @@ iframe {
 #contactForm,#contactSubmission,#displayTable {
 	margin-left: auto;
 	margin-right: auto;
-	width: 800px;
+	width: 600px;
 	border-collapse: collapse;
 }
 
@@ -408,8 +413,13 @@ iframe {
 #contactForm textarea {
 	resize: none;
 	white-space: pre-wrap;
-	width: 800px;
+	width: 650px;
 	vertical-align: middle;
+	margin: auto;
+}
+
+select {
+	width: 425px;
 }
 
 /**ERROR**/

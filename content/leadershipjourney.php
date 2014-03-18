@@ -53,6 +53,9 @@ needed to excite, engage and retain a qualified, unified and productive workforc
 </td></tr>
 </table>
 </p>
+<p>
+Through the Leadership Journey, the 71% who are not engaged or actively disengaged can be transformed into productive and fully engaged leaders!
+</p>
 </div>
 <?php require('includes/execRight.php'); ?>
 

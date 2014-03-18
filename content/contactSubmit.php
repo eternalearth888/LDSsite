@@ -64,25 +64,25 @@
 		<td>
 			<?php
 				if (isset($_POST['EC'])) {
-					$coachV = 1;
+					$coachV = "Yes";
 					echo "Executive Coaching";
 					echo '<br />';
 				} else {
-					$coachV = 0;
+					$coachV = "No";
 				}
 				if (isset($_POST['TD'])) {
-					$teamV = 1;
+					$teamV = "Yes";
 					echo "Team Development";
 					echo '<br />';
 				} else {
-					$teamV = 0;
+					$teamV = "No";
 				}
 				if (isset($_POST['info'])) {
-					$infoV = 1;
+					$infoV = "Yes";
 					echo "Other";
 					echo '<br />';
 				} else {
-					$infoV = 0;
+					$infoV = "No";
 				}
 				if ( (!(isset($_POST['EC']))) && (!(isset($_POST['TD']))) && (!(isset($_POST['info']))) ){
 					echo "N/A";
@@ -95,25 +95,25 @@
 		<td>
 			<?php
 				if (isset($_POST['CS'])) {
-					$suiteV = 1;
+					$suiteV = "Yes";
 					echo "C-Suite Executive";
 					echo '<br />';
 				} else {
-					$suiteV = 0;
+					$suiteV = "No";
 				}
 				if (isset($_POST['HR'])) {
-					$repV = 1;
+					$repV = "Yes";
 					echo "HR Representative";
 					echo '<br />';
 				} else {
-					$repV = 0;
+					$repV = "No";
 				}
 				if (isset($_POST['position'])) {
-					$posV = 1;
+					$posV = "Yes";
 					echo "Other";
 					echo '<br />';
 				} else {
-					$posV = 0;
+					$posV = "No";
 				}
 				if ( (!(isset($_POST['CS']))) && (!(isset($_POST['HR']))) && (!(isset($_POST['position']))) ){
 					echo "N/A";

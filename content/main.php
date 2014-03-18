@@ -3,6 +3,7 @@
 <h1>-Dr. Elia Gourgouris</h1>
 </div>
 <p>
+<img id="teamImage" src="images/teamwork.jpg" alt="Executive Coaching" align="left"/>
 Whether working with C-level executives, direct reports, colleagues, vendors or 
 customers, challenges at the workplace often come down to <i>Relationships</i> – how 
 people do, or don’t, work well together. In fact, the more technologically advanced 

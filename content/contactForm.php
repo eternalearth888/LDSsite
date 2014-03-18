@@ -12,20 +12,10 @@
 		</thead>
 			<tr>
 				<td id="left">
-					Title
-				</td>
-				<td>
-					<input type="radio" name="titleName" <?php if (isset($_POST['titleName']) && $_POST['titleName']=="Ms.") echo "checked";?>  value="Ms.">Ms.
-					<input type="radio" name="titleName" <?php if (isset($_POST['titleName']) && $_POST['titleName']=="Mrs.") echo "checked";?>  value="Mrs.">Mrs.
-					<input type="radio" name="titleName" <?php if (isset($_POST['titleName']) && $_POST['titleName']=="Mr.") echo "checked";?>  value="Mr.">Mr.
-				</td>
-			</tr>
-			<tr>
-				<td id="left">
 					First Name
 				</td>
 				<td>
-					<input type="text" name="firstName"/>
+					<input type="text" name="firstName" size="50"/>
 				</td>
 			</tr>
 			<tr>
@@ -33,8 +23,15 @@
 					Last Name
 				</td>
 				<td>
-					<input type="text" name="lastName"/>
+					<input type="text" name="lastName" size="50"/>
 				</td>
+			</tr>
+			<tr>
+				<td id="left">
+					Buisness Title
+				</td>
+				<td>
+					<input type="text" name="titleName" size="50"/></td>
 			</tr>
 		<thead id="companyHead">
 			<tr>
@@ -48,7 +45,7 @@
 					Company
 				</td>
 				<td colspan="2">
-					<input type="text" name="comName"/>
+					<input type="text" name="comName" size="50"/>
 				</td>
 			</tr>
 			<tr>
@@ -72,7 +69,7 @@
 					Phone
 				</td>
 				<td>
-					<input type="tel" name="comTel"/>
+					<input type="tel" name="comTel" size="50"/>
 				</td>
 			</tr>
 			<tr>
@@ -80,7 +77,7 @@
 					Email
 				</td>
 				<td>
-					<input type="email" name="comEmail"/>
+					<input type="email" name="comEmail" size="50"/>
 				</td>
 			</tr>
 			<tr>
@@ -88,14 +85,14 @@
 					Site
 				</td>
 				<td colspan="2">
-					<input type="text" name="comSite"/>
+					<input type="text" name="comSite" size="50"/>
 				</td>
 			<tr>
 				<td id="left">
 					Address 1
 				</td>
 				<td colspan="2">
-					<input type="text" name="comAdd1"/>
+					<input type="text" name="comAdd1" size="50"/>
 				</td>
 			</tr>
 			<tr>
@@ -103,7 +100,7 @@
 					Address 2
 				</td>
 				<td colspan="2">
-					<input type="text" name="comAdd2"/>
+					<input type="text" name="comAdd2" size="50"/>
 				</td>
 			</tr>
 			<tr>
@@ -111,7 +108,7 @@
 					City
 				</td>
 				<td colspan="2">
-					<input type="text" name="comCity"/>
+					<input type="text" name="comCity"  size="50"/>
 				</td>
 			</tr>
 			<tr>
@@ -150,7 +147,7 @@
 			</tr>
 			<tr>
 				<td id="left">
-					More Info
+					What are you interested in?
 				</td>
 				<td colspan="2">
 					<input name="EC" type="checkbox" value="Exectutive Coaching">Executive Coaching
@@ -162,7 +159,7 @@
 			</tr>
 			<tr>
 				<td id="left">
-					Position
+					What is your position?
 				</td>
 				<td colspan="2">
 					<input name="CS" type="checkbox" value="C-Suite Executive">C-Suite Executive
