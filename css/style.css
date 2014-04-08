@@ -384,16 +384,15 @@ iframe {
 }
 
 #contactSubmission tr:nth-child(even), #contactForm tr:nth-child(even) {
-	background-color: rgba(129,204,216,.4);
+	background-color: rgba(129,204,216,.3);
 }
 
 #contactHead, #companyHead, #extraHead, #submissionHead, #displayHead {
-	background-color: rgba(24,103,118,.6);
+	background-color: rgba(24,103,118,.5);
 	font-color: #FFF;
 	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
-	box-shadow: 5px 5px 5px #888888;
 	vertical-align: middle;
 }
 

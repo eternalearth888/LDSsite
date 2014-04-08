@@ -1,6 +1,19 @@
 <?php include('includes/countries_array.php'); ?>
 <?php include('includes/states_array.php'); ?>
-
+<script type='text/javascript' src='http://code.jquery.com/jquery.min.js'></script>
+<script type='text/javascript'>
+$(function(){
+     $('#firstName' && '#lastName' && '#comEmail').keyup(function(){
+          if ($(this).val() == '') { //Check to see if there is any text entered
+               //If there is no text within the input ten disable the button
+               $('.enableOnInput').prop('disabled', true);
+          } else {
+               //If there is text in the input, then enable the button
+               $('.enableOnInput').prop('disabled', false);
+          }
+     });
+});
+</script>
 <form name="coachForm" action="submission.php" method="post">
 	<table id="contactForm">
 		<thead id="contactHead">
@@ -12,18 +25,18 @@
 		</thead>
 			<tr>
 				<td id="left">
-					First Name
+					First Name*
 				</td>
 				<td>
-					<input type="text" name="firstName" size="50"/>
+					<input type="text" name="firstName" id="firstName" size="50"/>
 				</td>
 			</tr>
 			<tr>
 				<td id="left">
-					Last Name
+					Last Name*
 				</td>
 				<td>
-					<input type="text" name="lastName" size="50"/>
+					<input type="text" name="lastName" id="lastName" size="50"/>
 				</td>
 			</tr>
 			<tr>
@@ -74,10 +87,10 @@
 			</tr>
 			<tr>
 				<td id="left">
-					Email
+					Email*
 				</td>
 				<td>
-					<input type="email" name="comEmail" size="50"/>
+					<input type="email" name="comEmail" id="comEmail" size="50"/>
 				</td>
 			</tr>
 			<tr>
@@ -183,7 +196,12 @@
 			</tr>
 			<tr>
 				<td id="contactSubmit" colspan="2">
-					<input type="submit" value="Submit Form"/>
+					<input type='submit' name='submit' id='submitBtn' class='enableOnInput' disabled='disabled'/>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" id="left">
+					* = Required Field
 				</td>
 			</tr>
 	</table>
