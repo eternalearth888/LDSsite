@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="user-scalable=0;"/>
+<meta name="description" content="LDS Executive Coaching: Transforming business through Leadership, Development, Solutions ">
+<meta name="keywords" content="Dr. Elia Gourgouris, Executive, Coaching, LDS, Leadership, Development, Solutions, executive coaching">
+<meta charset="UTF-8">
+<head>
+	<title> LDS Executive Coaching</title>
+	<link rel="stylesheet" type="text/css" href="../css/display2.css">
+	<!--[if lt IE 9]> <script src="html5shiv.js"></script> <![endif]-->
+</head>
+	<body>
 <?php
 	/* Create a new mysqli object with database connection parameters */
    @ $db = new mysqli('localhost', 'root', '', 'ldsexecu_submissions');
@@ -50,8 +62,8 @@
 		    $stmt->fetch();
 		}
 ?>
-	<table align="center">
-			<thead align="center">
+	<table class="displayTable" align="center">
+			<thead class="displayHead1">
 				<tr>
 					<td colspan="9">Personal Info</td>
 				</tr>
@@ -76,7 +88,7 @@
 	echo '<td colspan="3" align="right">'.$email.'</td>';
 ?>
 	</tr>
-		<thead align="center" >
+		<thead class="displayHead1">
 			<tr>
 				<td colspan="9">Company Info</td>
 			</tr>
@@ -107,10 +119,10 @@
 	echo '<td >'.$code.'</td>';
 ?>
 	</tr>
-	<thead align="center" >
+	<thead class="displayHead1">
 		<tr>
 			<td colspan="4">Seeking</td>
-			<td colspan="4">Position</td>
+			<td colspan="5">Position</td>
 		</tr>
 	</thead>
 	<thead align="center" >
@@ -133,7 +145,7 @@
 	echo '<td >'.$posV.'</td>';
 ?>
 	</tr>
-	<thead align="center">
+	<thead class="displayHead1">
 	</tr>
 		<td colspan="9">Details</td>
 	</tr>
@@ -154,3 +166,5 @@
 <?php
 	$db->close();
 ?>
+	</body>
+</html>

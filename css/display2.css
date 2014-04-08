@@ -1,0 +1,54 @@
+/**WIDTHS**/
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #1A1A1A;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	background: white;
+}
+
+/**SUBMISSION FORM**/
+#displayTable {
+	margin: auto;
+	margin-bottom: 2em;
+	width: 95%;
+	min-width: 1000px;
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+#displayTable td {
+	vertical-align: middle;
+}
+
+#displayTable tr:nth-child(even) {
+	background-color: rgba(129,204,216,.4);
+}
+
+.displayHead1 {
+	background-color: rgba(24,103,118,.6);
+	font-color: #FFF;
+	text-align: center;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.displayHead2 {
+	background-color: rgba(176,197,231,.6);
+	font-color: #FFF;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.cell {
+	text-align: center;
+}
