@@ -9,7 +9,6 @@ body {
 	padding: 0;
 	color: #1A1A1A;
 	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-	background: white;
 }
 
 
@@ -31,14 +30,10 @@ a:hover, a:focus {
 #displayTable {
 	margin: auto;
 	margin-bottom: 2em;
-	width: 95%;
-	min-width: 1000px;
+	width: 80%;
+	min-width: 800px;
 	border-collapse: collapse;
-	border: 1px solid black;
-}
-
-#displayTable td {
-	vertical-align: middle;
+	background-color: white;
 }
 
 #displayTable tr:nth-child(even) {
@@ -46,27 +41,17 @@ a:hover, a:focus {
 }
 
 .displayHead1 {
-	background-color: rgba(24,103,118,.6);
 	font-color: #FFF;
-	text-align: center;
 	font-weight: bold;
-	text-align: center;
 	text-transform: uppercase;
-	box-shadow: 5px 5px 5px #888888;
 	vertical-align: middle;
+	border-bottom: 1px solid black;
 }
 
 .displayHead2 {
 	background-color: rgba(176,197,231,.6);
 	font-color: #FFF;
-	text-align: center;
-	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
-	box-shadow: 5px 5px 5px #888888;
 	vertical-align: middle;
-}
-
-.cell {
-	text-align: center;
 }
